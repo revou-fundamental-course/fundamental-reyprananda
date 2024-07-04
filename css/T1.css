@@ -1,16 +1,29 @@
+body{
+    background-color:wheat;
+}
 main{
     padding: 32px;
+}
+
+.jenis-kelamin{
+display:inline ;
+justify-content: none;
+width: 60%;
+margin: 0;
 }
 .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 3px, gray;
+    background-color: wheat;
+    border-style: outset;
 }
         .font1{
              font-family: cursive;
         }
 .hr{
-    border: none;
+    border: 3px, solid gray;
     height: 2px;
     color: black;
     background-color: gray;
@@ -77,3 +90,5 @@ nav>a{
 .devider{
     flex: 2px;
 }
+    
+

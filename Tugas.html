@@ -1,89 +1,111 @@
 <DOCTYPE html>
     <html lang="en">
-    <head>
-        <meta charset="UTF-8"> <!--Syntax Pengkodean karakter web-->
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>Portofolio Rehan Prananda Asri</title>
-        </head>
-
-    <body>
-        <hr class="hr">
-            <header class="nav-container">
-                <div class="logo-icon"></div>
-                <link rel="stylesheet" href="css/T1.css">
-                <nav>
-                    <a href="#Home">Home</a>
-                    <a href="#Our Profile">Our Profile</a>
-                    <a href="#Portofolio">Portofolio</a>
-                    <a href="#Massage Us">Massage Us</a>
-                </nav>
-            </header>
-        <hr class="hr">
-    </body>
+    <body class="">  
+            <head>
+            <meta charset="UTF-8"> <!--Syntax Pengkodean karakter web-->
+            <meta name="viewport" content="width-device-width, initial-scale=1.0">
+            <title>Portofolio Rehan Prananda Asri</title>
+            </head>
+                <header class="nav-container">
+                    <div class="logo-icon"></div>
+                    <link rel="stylesheet" href="css/T1.css">
+                    <nav>
+                        <a href="#Home">Home</a>
+                        <a href="#Our Profile">Our Profile</a>
+                        <a href="#Portofolio">Portofolio</a>
+                        <a href="#Massage Us">Massage Us</a>
+                    </nav>
+                </header>
             <main>
-                <!--Main Content-->
-                <section id="Home">
-                    <header>
-                        <h1 class="font1">Hi, User Selamat Datang di Website</h1>
-                    </header>
+                    <!--Main Content-->
+                    <section id="Home">
+                        <header>
+                            <h1 class="font1">Hi, User Selamat Datang di Website</h1>
+                        </header>
+                            <article>
+                                <p class="font1">Ini adalah Web pertama dari saya. Terima Kasih sudah mengunjungi 😅</p>
+                                <div class="banner-container" 
+                                class="banner-item" style="background-image: url(../fundamental-reyprananda/assets/naga1.jpg); background-size: cover;"></div>
+                            </article>
+                    </section>
+                    <br>
+                    <hr class="hr">
+                    <!--Our Profile--> 
+                    <section id="Our Profile">
+                        <header>
+                            <h1 class="font1">Our Profile</h1>
+                        </header>
+                            <article class="display-profile"> 
+                                <div class="profile-text">
+                                    <div class="profile-banner Profile-1"></div>
+                                    <p>Profile 1</p>
+                                </div>
+                                <div class="profile-text">
+                                    <div class="profile-banner Profile-2"></div>
+                                    <p>Profile 2</p>
+                                </div>
+                                <div class="profile-text">
+                                    <div class="profile-banner Profile-3"></div>
+                                    <p>Profile 3</p>
+                                </div>
+                                <div class="devider"></div>
+                            </article>
+                    </section>
+                    <hr class="hr">   
+                    <!--Portofolio Content-->
+                    <section id="Portofolio">
+                        <header>
+                            <h1 class="font1">Portofolio</h1>
+                        </header>
                         <article>
-                            <p class="font1">Ini adalah Web pertama dari saya. Terima Kasih sudah mengunjungi 😅</p>
-                            <div class="banner-container"></div>
+                            <p class="font1">Dikarenakan ini percobaan web pertama saya harap dimaklumi kekurangannya.</p>
                         </article>
-                </section>
-                <br>
-                <hr class="hr">
-                <!--Our Profile--> 
-                <section id="Our Profile">
-                    <header>
-                        <h1 class="font1">Our Profile</h1>
-                    </header>
-                        <article class="display-profile"> 
-                            <div class="profile-text">
-                                <div class="profile-banner Profile-1"></div>
-                                <p>Profile 1</p>
-                            </div>
-                            <div class="profile-text">
-                                <div class="profile-banner Profile-2"></div>
-                                <p>Profile 2</p>
-                            </div>
-                            <div class="profile-text">
-                                <div class="profile-banner Profile-3"></div>
-                                <p>Profile 3</p>
-                            </div>
-                            <div class="devider"></div>
-                        </article>
-                </section>
-                <hr class="hr">   
-                <!--Portofolio Content-->
-                
-                <!--Massage Us Content-->
-                <section id="Massage Us">
-                    <header>
-                        <h1 class="font1">Massage Us</h1>
-                    </header>
-                    <article>
-                        <form action=""></form>
-                            <label for="name">Nama:</label>
-                            <input id="name" type="text">
-                        <br>
-                        <label for="date">Tanggal Lahir :</label>
-                        <input type="date"type="Tanggal">
-                        <br>
-                        <label for="radio">Jenis Kelamin :</label>
-                        <label><input type="radio" name="Jenis_Kelamin" value="Laki-Laki">Laki-Laki</label>
-                        <label><input type="radio" name="Jenis_Kelamin" value="Perempuan">Perempuan</label>
-                        <br>
-                        <label for="text">Pesan</label>
-                        <textarea name="Pesan"></textarea>
-                        <p>
-                            <input type="submit" value="submit" name="submit">
-                        </p>
-                        <form id="formsubmit">
-                            <label for="formsubmit"></label>
-                            <button onclick="tampilkanhasil()">Submit</button>
-                        </form>
-                    </article>
-                </section>
+                    </section>
+                    <hr class="hr">   
+                    <!--Massage Us Content-->
+                    <section id="Massage Us">
+                        <header>
+                            <h1 class="font1">Massage Us</h1>
+                        </header>
+                            <article style="display: flex; justify-content: space-between;">
+                                <form>
+                                    <table>
+                                        <!--Input Nama-->
+                                        <tr>
+                                            <td><label for="namaLengkap">Nama Lengkap:</label></td>
+                                            <td><input type="text" id="namaLengkap" required></td>
+                                        </tr>
+                                        <!--Input Tanggal Lahir-->
+                                        <tr>
+                                            <td><label for="date">Tanggal Lahir :</label></td>
+                                            <td><input type="date" id="date" required></td>
+                                        </tr>
+                                        <!--Input Jenis Kelamin-->
+                                        <tr>
+                                            <td><label>Jenis Kelamin:</label></td>
+                                            <td>
+                                                <div class="jenis-kelamin">
+                                                    <input type="radio" name="JenisKelamin" id="men" value="Laki-Laki" required>Laki-Laki
+                                                </div>
+                                                <div class="jenis-kelamin">
+                                                    <input type="radio" name="JenisKelamin" id="women" value="Perempuan" required>Perempuan
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!--Input Pesan-->
+                                        <tr>
+                                            <td><label for="catatan">Pesan:</label></td>
+                                            <td><textarea name="Pesan" id="catatan" cols="20" rows="5"></textarea></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><button type="submit">Kirim Pesan</button></td>
+                                        </tr>
+                                    </table>
+                                </form>
+                        
+                                <div id="hasil"  style="border: 1px solid black; background-color: white; height: 185px; width: 300px;"></div>
+                            </article>
             </main>
+            <script src="js/T3.js"></script>
+    </body>
     </html>
